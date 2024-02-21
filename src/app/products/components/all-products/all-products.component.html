@@ -1,0 +1,27 @@
+<div class="my-25 d-flex align-items-center">
+
+
+  <div class="ml-auto">
+    <app-select [data]="categories" [title]="'Categories :'" (selectedvalue)="filterByCategory($event)"></app-select>
+  </div>
+</div>
+<br>
+
+<!-- Show spinner for 1 second after search or category selection -->
+<div class="text-center w-100" *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<div class="row" *ngIf="!loading">
+  <div *ngIf="filteredProducts.length > 0; else noProducts">
+    <div class="col-md-3 col-sm-12" *ngFor="let p of filteredProducts">
+      <app-product [data]="p" (item)="addtocart($event)"></app-product>
+    </div>
+  </div>
+  <ng-template #noProducts>
+    <div class="col-md-12 text-center mt-3">
+      <p>This product does not exist.</p>
+    </div>
+  </ng-template>
+</div>
+

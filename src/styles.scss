@@ -1,0 +1,139 @@
+@import 'variables';
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+body {
+  padding: 0;
+  margin: 0 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #333;
+  background-color: #f5f5f5;/* Set default background color */
+}
+.dark-mode body{
+  color: #fff;
+  background: linear-gradient(to bottom, #15161D, #000000);
+}
+.dark-mode .main-header .navbar-collapse .navbar-nav .nav-item .nav-link a{
+
+  color:#ffffff ;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Light Mode */
+.box {
+  width: 90%;
+  margin: 100px auto;
+  height: 600px;
+
+  ul {
+    li {
+      font-size: 22px;
+      margin: 20px 0;
+    }
+  }
+
+  img {
+    width: 100%;
+    max-height: 500px;
+    min-height: 500px;
+  }
+}
+
+h4{
+  cursor: pointer;
+}
+
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #15161D;
+  color: #000000;
+}
+.dark-mode input{
+  color: #fff;
+}
+.dark-mode .category .category-header{
+  color: #fff;
+}
+.dark-mode .category .product-carousel-container .product-list .product-item .product-details{
+  background-color: #15161D;
+  color: #fff;
+}
+
+.dark-mode h2{
+  color: #fff;
+}
+.dark-mode .category-products .category-item .product-list .product-item{
+  background-color: #15161D;
+  color: #fff;
+}
+
+.dark-mode label {
+  color: #fff;
+}
+.dark-mode .products-container .item .product-item{
+  background-color: #15161D;
+  color: #fff;
+}
+.dark-mode a {
+  color: #8a8888; /* Dark mode link color */
+}
+
+.dark-mode a:hover {
+  color: #bbb; /* Dark mode link hover color */
+}
+.dark-mode tbody{
+  border: rgb(255, 255, 255) 2px solid;
+}
+.dark-mode th{
+  background-color: #15161D;
+  color: #fff;
+
+
+}
+.dark-mode input{
+  background-color: #15161D;
+}
+.dark-mode td{
+  background-color: #15161D;
+  color: #fff;
+
+}
+.dark-mode .box {
+  border: 1px solid #444;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255);
+  background-color: #15161D;
+.row {
+  background-color: #15161D;
+
+}
+  ul {
+    li {
+      font-size: 22px;
+      margin: 20px 0;
+      color: #fff;
+    }
+  }
+
+  img {
+    border: 1px solid #444;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.dark-mode .hero-banner {
+  color: #585858;
+  background-color: #15161D;
+}
+.dark-mode .hero-banner .left-hero-color
+{
+  background-color: #15161D;
+}
+

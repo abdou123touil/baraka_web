@@ -1,0 +1,38 @@
+input[type="checkbox"] {
+  display: none; // Hide the checkbox
+}
+
+label {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+input:checked + label:after {
+  transform: translateX(18px);
+}
+
+i {
+  font-size: 20px;
+  color: black;
+  transition: opacity 0.3s;
+}
+
+.fas.fa-sun {
+  opacity: 0; // Hide the sun icon initially
+}
+
+input:checked + label i.fas.fa-sun {
+  opacity: 1; // Show the sun icon when dark mode is enabled
+  color: white;
+}
+
+input:checked + label i.fas.fa-moon {
+  opacity: 0; // Hide the moon icon when dark mode is enabled
+}

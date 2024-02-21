@@ -1,0 +1,14 @@
+<ng-container *ngIf="headerVisible">
+  <app-header></app-header>
+</ng-container>
+
+<div class="container">
+  <br>
+  <br>
+  <router-outlet></router-outlet>
+  
+</div>
+
+<ng-container *ngIf="footerVisible">
+  <app-footer></app-footer>
+</ng-container>

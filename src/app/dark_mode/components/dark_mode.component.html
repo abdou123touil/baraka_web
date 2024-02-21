@@ -1,0 +1,5 @@
+
+<input type="checkbox" id="darkmode-toggle" [checked]="isDarkModeEnabled()" (click)="toggleDarkMode()" />
+<label for="darkmode-toggle">
+  <i class="fas" [ngClass]="isDarkModeEnabled() ? 'fa-sun' : 'fa-moon'"></i>
+</label>
